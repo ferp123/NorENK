@@ -1,0 +1,396 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex: 1 0 auto;
+    
+}
+
+/* Header styles */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Search styles */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    margin-right: 1rem;
+}
+
+#search-form {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+#search-form button {
+    padding: 0.5rem 1rem;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-form button:hover {
+    background-color: #e55c00;
+}
+
+.login-link {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.login-link:hover {
+    color: #ff6600;
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 80px auto 0;
+    padding: 2rem;
+
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.3);
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+
+#home {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+#home > p {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 1rem;
+}
+
+.benefits {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.benefits h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.benefit-group {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.benefit-group h3 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 1rem;
+}
+
+.benefit-group ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.benefit-group li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.benefit-group li::before {
+    content: "✓";
+    color: #ff6600;
+    position: absolute;
+    left: 0;
+}
+
+.cta {
+    margin-top: 2rem;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 0 0.5rem;
+}
+
+.cta-button:hover {
+    background-color: #e55c00;
+}
+
+.cta-button.secondary {
+    background-color: #34495e;
+}
+
+.cta-button.secondary:hover {
+    background-color: #2c3e50;
+}
+
+/* Showcase styles */
+#showcase {
+    margin-top: 3rem;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.profile-card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card a {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.profile-image {
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-info h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    color: #2c3e50;
+}
+
+.profile-info p {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+    color: #34495e;
+}
+
+.profile-info .skills {
+    font-size: 0.75rem;
+    color: #7f8c8d;
+    margin-top: 0.3rem;
+}
+
+
+
+.firkløver{
+    text-align: center;
+}
+
+
+/* Footer styles */
+footer {
+    flex-shrink: 0;
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+}
+
+.footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #1a252f;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-content, nav ul, .header-right, .footer-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav ul li, .search-container {
+        margin: 0.5rem 0;
+    }
+
+    #search-form, #search-input {
+        width: 100%;
+    }
+
+    .login-link {
+        text-align: center;
+        display: block;
+        padding: 0.5rem;
+        background-color: #f0f0f0;
+        border-radius: 4px;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin: 1rem 0;
+    }
+}

@@ -1,0 +1,68 @@
+/* about.css */
+
+.about-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3.5rem;
+}
+
+.about-page h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-page section {
+    margin-bottom: 3rem;
+}
+
+.about-page h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 1rem;
+}
+
+.about-page p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.values ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.values li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.values li::before {
+    content: "•";
+    color: #ff6600;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+}
+
+.values strong {
+    color: #34495e;
+}
+
+@media (max-width: 768px) {
+    .about-page {
+        padding: 1rem;
+    }
+
+    .about-page h1 {
+        font-size: 2rem;
+    }
+
+    .about-page h2 {
+        font-size: 1.5rem;
+    }
+}
