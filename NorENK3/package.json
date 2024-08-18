@@ -16,6 +16,8 @@
     "express": "^4.19.2",
     "cors": "^2.8.5",
     "mongoose": "^8.5.3",
-    "express-validator": "^6.14.2"
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "bcryptjs": "^2.4.3"
   }
 }
